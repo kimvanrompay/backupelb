@@ -1,0 +1,25 @@
+{
+  "name": "@function/machine-sqs-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev:poller": "npx tsx watch src/handler.local.ts",
+    "test": "yarn test:unit",
+    "test:unit": "vitest run --dir test/unit",
+    "test:integration": "vitest run --dir test/integration",
+    "build": "esbuild src/handler.ts --bundle --platform=node --target=node22 --outfile=dist/handler.js"
+  },
+  "dependencies": {
+    "@lib/errors": "workspace:^",
+    "@lib/models": "workspace:^",
+    "@lib/services": "workspace:^",
+    "@lib/utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.147",
+    "aws-lambda": "^1.0.7",
+    "esbuild": "^0.25.0"
+  }
+}
