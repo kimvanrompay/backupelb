@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "composite": true,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": false,
+    "verbatimModuleSyntax": true,
+    "noImplicitOverride": true,
+    "noEmit": false,
+    "lib": [
+      "ES2020"
+    ],
+    "experimentalDecorators": true,
+    "types": [
+      "vitest/globals"
+    ],
+    "typeRoots": [
+      "node_modules",
+      "./libraries/types"
+    ]
+  },
+  "rootDir": "./",
+  "include": [
+    "api/**/*.ts",
+    "infrastructure/**/*.ts",
+    "libraries/**/*.ts",
+    "src/**/*"
+  ],
+    "exclude": [
+      "node_modules",
+    ]
+}
