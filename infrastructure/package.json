@@ -1,0 +1,14 @@
+{
+  "name": "infrastructure",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "@aws-solutions-constructs/aws-iot-sqs": "^2.77.0",
+    "@aws-solutions-constructs/aws-sqs-lambda": "^2.77.0",
+    "@types/node": "^22.12.0",
+    "aws-cdk-lib": "^2.177.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3"
+  }
+}
